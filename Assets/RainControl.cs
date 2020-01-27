@@ -5,7 +5,7 @@ using UnityEngine;
 public class RainControl : MonoBehaviour
 {
 
-    public float isRainging = 0; // 0 == false 1 == true
+    public float isRaining = 0; // 0 == false 1 == true
 
     public AudioSource RainAudSource;
     public AudioSource NightAudSource;
@@ -13,8 +13,8 @@ public class RainControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        isRainging = Random.Range(0, 2);
-        if (isRainging == 1)
+        isRaining = Random.Range(0, 2);
+        if (isRaining == 1)
         {
             RainAudSource.Play();
             foreach (ParticleSystem partSystem in partSystemList)
